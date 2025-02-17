@@ -2,6 +2,8 @@ import streamlit as st
 import PyPDF2
 import pdfplumber
 from transformers import pipeline
+import tensorflow as tf  # For TensorFlow
+import torch  # For PyTorch
 
 # Load the pre-trained transformer model for question answering
 qa_model = pipeline("question-answering")
